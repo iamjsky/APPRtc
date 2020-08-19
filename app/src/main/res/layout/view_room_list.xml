@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:elevation="7dp"
+        android:background="@drawable/radius_gray_background"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_height="229dp"
+            android:layout_width="match_parent"
+            android:id="@+id/imageView1"
+            android:alpha="0.3"
+            android:src="@drawable/background_piano3"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="7dp"
+            app:riv_border_width="1dip"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"/>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/top_radius_white_background"
+            android:id="@+id/container1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:lines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="asdsadasd"
+                android:id="@+id/text_title"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:id="@+id/view_indicator"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_below="@id/container1"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp">
+
+            <ImageView
+                android:scaleType="centerInside"
+                android:src="@drawable/background_piano"
+                android:id="@+id/img_profile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:maxHeight="100dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/container2"
+            android:background="@drawable/bottom_radius_white_background"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:lines="1"
+                android:text="sdfs"
+                android:id="@+id/text_userid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

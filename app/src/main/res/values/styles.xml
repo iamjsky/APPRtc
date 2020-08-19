@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppTheme" parent="android:Theme.Holo" />
+
+
+  <style name="AppTheme2" parent="Theme.AppCompat.Light" >
+    <item name="colorPrimary">@color/primary2</item>
+    <item name="colorPrimaryDark">@color/primary2</item>
+    <item name="colorAccent">@color/primary</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppThemeFull" parent="Theme.AppCompat.Light" >
+    <item name="colorPrimary">@color/primary2</item>
+    <item name="colorPrimaryDark">@color/primary2</item>
+    <item name="colorAccent">@color/primary</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+
+  <style name="CallActivityTheme" parent="android:Theme.Black">
+    <item name="android:windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+
+  <style name="mySpinnerItemStyle" parent="ThemeOverlay.AppCompat.Dark">
+    <item name="android:textColor">@color/colorOther</item>
+    <item name="android:textSize">18dp</item>
+  </style>
+</resources>

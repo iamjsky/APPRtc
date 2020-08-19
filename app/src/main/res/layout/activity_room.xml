@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+    <org.webrtc.SurfaceViewRenderer
+        android:rotation="180"
+        android:layout_weight="1"
+        android:id="@+id/fullscreen_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+
+
+
+
+
+        <org.webrtc.SurfaceViewRenderer
+            android:layout_margin="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2.2"
+            android:id="@+id/remote_video_view"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+
+        android:id="@+id/container_log"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:text="내 피아노 정보"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+            android:padding="5dp"
+            android:id="@+id/list_my_log"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        <TextView
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:text="상대 피아노 정보"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:padding="5dp"
+            android:id="@+id/list_remote_log"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/view_progress_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorOther"
+            android:text="연결 대기중..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ProgressBar>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

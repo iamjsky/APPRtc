@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:background="#eaeaea"
+    android:layout_width="340dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_below="@id/container1"
+            android:layout_above="@id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_soundleader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="#aaEAEAEA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></View>
+
+
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/primary2"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="User ID"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="left"
+                android:text="Name Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_main_profile"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/icon_piano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="피아노 연결 여부 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+
+                <ImageView
+                    android:id="@+id/view_usb_indicator"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_margin="7dp"
+                android:elevation="5dp"
+                android:text="피아노 연결"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:background="@color/primary2"
+                android:id="@+id/btn_connect"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+
+            <EditText
+
+                android:inputType="number"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:id="@+id/edit_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:visibility="gone"
+                android:layout_height="35dp"
+                android:layout_margin="7dp"
+                android:text="전송"
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                />
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_height="35dp"
+                android:layout_margin="7dp"
+                android:text="전송2"
+                android:id="@+id/btn_test2"
+                android:layout_width="match_parent"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:textColor="@color/colorOther"
+            android:text="로그아웃"
+            android:background="@color/colorOther2"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_piano3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+
+    <View
+        android:background="#aa000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></View>
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_soundleader"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ProgressBar>
+
+</android.support.constraint.ConstraintLayout>

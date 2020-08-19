@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_overlay_gradient">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/text_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEAEA"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상대방ID"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/text_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="피아노 연결상태"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_piano" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text=":"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                        <ImageView
+                            android:id="@+id/view_indicator"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_full_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Toggle"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <LinearLayout
+                    android:id="@+id/container_camera_reverse_ud"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="상하 반전"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:scaleType="centerInside"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_reverse_updown"
+                        android:id="@+id/btn_camera_reverse_ud"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/container_camera_reverse_lr"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="좌우 반전"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:scaleType="centerInside"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_reverse_leftright"
+                        android:id="@+id/btn_camera_reverse_lr"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/container_usb_view"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="피아노 연결"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:scaleType="centerInside"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_connect"
+                        android:id="@+id/btn_usb_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                         />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_mic_view"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="내 마이크"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                        android:padding="15dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_block_mic"
+                        android:id="@+id/btn_mic_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Small Toggle" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_remote_view"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="내 카메라"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                        android:padding="15dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_my"
+                        android:id="@+id/btn_small_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="종료"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/btn_disconnect"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/player_stop" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

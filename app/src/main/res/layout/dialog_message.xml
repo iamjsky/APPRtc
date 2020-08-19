@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_white_background"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_marginTop="10dp"
+        android:text="ajsdklfjsklgh fga;lskdjf ga;lksdfj gahl;kdsfj gasdkl;fj gahdks;lfj"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="@color/colorOther"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="취소"
+            android:textColor="@color/colorOther2"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view_devider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorOther"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:text="확인"
+            android:textColor="@color/primary2"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_confirm"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
